@@ -61,6 +61,11 @@ public class Patient {
         super();
     }
     
+    //mock
+    public String getPatient_Id() {
+		return patientname;
+	}
+    
     public Long getPatientid() {
 		return patientid;
 	}

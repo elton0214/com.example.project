@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/appointment")
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class AppointmentController {
     private final AppointmentService appointmentService;
     

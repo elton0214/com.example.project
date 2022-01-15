@@ -32,6 +32,11 @@ public class Appointment {
 	public void setBookingid(String bookingid) {
 		this.bookingid = bookingid;
 	}
+	
+	//mock
+	public String getBooking_id() {
+		return bookingid;
+	}
 
 	public String getDisease() {
 		return disease;

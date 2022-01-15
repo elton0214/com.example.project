@@ -12,7 +12,9 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 
-@Service @RequiredArgsConstructor @Transactional
+@Service 
+//@RequiredArgsConstructor 
+@Transactional
 public class AppointmentService{
 	
 	private final PatientRepository patRepo;
@@ -47,4 +49,10 @@ public class AppointmentService{
     public void deleteAppointment(String booking_id) {
         appmtRepo.deleteById(booking_id);
     }
+
+    //mock
+	public List<Appointment> getAllAppointments() {
+		// TODO Auto-generated method stub
+		return appmtRepo.findAll();
+	}
 }

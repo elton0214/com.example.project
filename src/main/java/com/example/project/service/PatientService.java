@@ -14,7 +14,9 @@ import lombok.RequiredArgsConstructor;
 
 import javax.transaction.Transactional;
 
-@Service @RequiredArgsConstructor @Transactional
+@Service 
+//@RequiredArgsConstructor 
+@Transactional
 public class PatientService {
 	
 	private final PatientRepository patRepo;
